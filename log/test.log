@@ -1,0 +1,230 @@
+Connecting to database specified by database.yml
+  [1m[36m (0.4ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+Connecting to database specified by database.yml
+  [1m[36m (0.1ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (112.3ms)[0m  CREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) 
+  [1m[36m (100.0ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35m (0.1ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations" 
+Migrating to CreateLocations (20190501063700)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.7ms)[0m  CREATE TABLE "locations" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "customer" varchar(255), "customer_type" varchar(255), "language" varchar(255), "no_of_locations" integer, "lat" varchar(255), "lng" varchar(255), "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.2ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20190501063700')[0m
+  [1m[35m (188.5ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Connecting to database specified by database.yml
+  [1m[36m (0.4ms)[0m  [1mbegin transaction[0m
+  [1m[35mFixture Delete (0.2ms)[0m  DELETE FROM "locations"
+  [1m[36mFixture Insert (0.3ms)[0m  [1mINSERT INTO "locations" ("customer", "type", "language", "no_of_locations", "created_at", "updated_at", "id") VALUES ('MyString', NULL, 'MyString', 1, '2019-05-01 08:39:29', '2019-05-01 08:39:29', 980190962)[0m
+SQLite3::SQLException: table locations has no column named type: INSERT INTO "locations" ("customer", "type", "language", "no_of_locations", "created_at", "updated_at", "id") VALUES ('MyString', NULL, 'MyString', 1, '2019-05-01 08:39:29', '2019-05-01 08:39:29', 980190962)
+  [1m[35m (0.3ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mFixture Delete (0.3ms)[0m  DELETE FROM "locations"
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO "locations" ("customer", "type", "language", "no_of_locations", "created_at", "updated_at", "id") VALUES ('MyString', NULL, 'MyString', 1, '2019-05-01 08:39:29', '2019-05-01 08:39:29', 980190962)[0m
+SQLite3::SQLException: table locations has no column named type: INSERT INTO "locations" ("customer", "type", "language", "no_of_locations", "created_at", "updated_at", "id") VALUES ('MyString', NULL, 'MyString', 1, '2019-05-01 08:39:29', '2019-05-01 08:39:29', 980190962)
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "locations"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "locations" ("customer", "type", "language", "no_of_locations", "created_at", "updated_at", "id") VALUES ('MyString', NULL, 'MyString', 1, '2019-05-01 08:39:29', '2019-05-01 08:39:29', 980190962)[0m
+SQLite3::SQLException: table locations has no column named type: INSERT INTO "locations" ("customer", "type", "language", "no_of_locations", "created_at", "updated_at", "id") VALUES ('MyString', NULL, 'MyString', 1, '2019-05-01 08:39:29', '2019-05-01 08:39:29', 980190962)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "locations"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "locations" ("customer", "type", "language", "no_of_locations", "created_at", "updated_at", "id") VALUES ('MyString', NULL, 'MyString', 1, '2019-05-01 08:39:29', '2019-05-01 08:39:29', 980190962)[0m
+SQLite3::SQLException: table locations has no column named type: INSERT INTO "locations" ("customer", "type", "language", "no_of_locations", "created_at", "updated_at", "id") VALUES ('MyString', NULL, 'MyString', 1, '2019-05-01 08:39:29', '2019-05-01 08:39:29', 980190962)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mFixture Delete (0.2ms)[0m  DELETE FROM "locations"
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO "locations" ("customer", "type", "language", "no_of_locations", "created_at", "updated_at", "id") VALUES ('MyString', NULL, 'MyString', 1, '2019-05-01 08:39:29', '2019-05-01 08:39:29', 980190962)[0m
+SQLite3::SQLException: table locations has no column named type: INSERT INTO "locations" ("customer", "type", "language", "no_of_locations", "created_at", "updated_at", "id") VALUES ('MyString', NULL, 'MyString', 1, '2019-05-01 08:39:29', '2019-05-01 08:39:29', 980190962)
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mFixture Delete (0.2ms)[0m  DELETE FROM "locations"
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO "locations" ("customer", "type", "language", "no_of_locations", "created_at", "updated_at", "id") VALUES ('MyString', NULL, 'MyString', 1, '2019-05-01 08:39:29', '2019-05-01 08:39:29', 980190962)[0m
+SQLite3::SQLException: table locations has no column named type: INSERT INTO "locations" ("customer", "type", "language", "no_of_locations", "created_at", "updated_at", "id") VALUES ('MyString', NULL, 'MyString', 1, '2019-05-01 08:39:29', '2019-05-01 08:39:29', 980190962)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mFixture Delete (0.2ms)[0m  DELETE FROM "locations"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "locations" ("customer", "type", "language", "no_of_locations", "created_at", "updated_at", "id") VALUES ('MyString', NULL, 'MyString', 1, '2019-05-01 08:39:29', '2019-05-01 08:39:29', 980190962)[0m
+SQLite3::SQLException: table locations has no column named type: INSERT INTO "locations" ("customer", "type", "language", "no_of_locations", "created_at", "updated_at", "id") VALUES ('MyString', NULL, 'MyString', 1, '2019-05-01 08:39:29', '2019-05-01 08:39:29', 980190962)
+  [1m[35m (0.1ms)[0m  rollback transaction
+Connecting to database specified by database.yml
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+  [1m[35mFixture Delete (0.3ms)[0m  DELETE FROM "locations"
+  [1m[36mFixture Insert (0.6ms)[0m  [1mINSERT INTO "locations" ("customer", "type", "language", "no_of_locations", "created_at", "updated_at", "id") VALUES ('MyString', 'bank', 'MyString', 1, '2019-05-01 08:41:18', '2019-05-01 08:41:18', 980190962)[0m
+SQLite3::SQLException: table locations has no column named type: INSERT INTO "locations" ("customer", "type", "language", "no_of_locations", "created_at", "updated_at", "id") VALUES ('MyString', 'bank', 'MyString', 1, '2019-05-01 08:41:18', '2019-05-01 08:41:18', 980190962)
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mFixture Delete (0.2ms)[0m  DELETE FROM "locations"
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO "locations" ("customer", "type", "language", "no_of_locations", "created_at", "updated_at", "id") VALUES ('MyString', 'bank', 'MyString', 1, '2019-05-01 08:41:18', '2019-05-01 08:41:18', 980190962)[0m
+SQLite3::SQLException: table locations has no column named type: INSERT INTO "locations" ("customer", "type", "language", "no_of_locations", "created_at", "updated_at", "id") VALUES ('MyString', 'bank', 'MyString', 1, '2019-05-01 08:41:18', '2019-05-01 08:41:18', 980190962)
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mFixture Delete (0.2ms)[0m  DELETE FROM "locations"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "locations" ("customer", "type", "language", "no_of_locations", "created_at", "updated_at", "id") VALUES ('MyString', 'bank', 'MyString', 1, '2019-05-01 08:41:18', '2019-05-01 08:41:18', 980190962)[0m
+SQLite3::SQLException: table locations has no column named type: INSERT INTO "locations" ("customer", "type", "language", "no_of_locations", "created_at", "updated_at", "id") VALUES ('MyString', 'bank', 'MyString', 1, '2019-05-01 08:41:18', '2019-05-01 08:41:18', 980190962)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "locations"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "locations" ("customer", "type", "language", "no_of_locations", "created_at", "updated_at", "id") VALUES ('MyString', 'bank', 'MyString', 1, '2019-05-01 08:41:18', '2019-05-01 08:41:18', 980190962)[0m
+SQLite3::SQLException: table locations has no column named type: INSERT INTO "locations" ("customer", "type", "language", "no_of_locations", "created_at", "updated_at", "id") VALUES ('MyString', 'bank', 'MyString', 1, '2019-05-01 08:41:18', '2019-05-01 08:41:18', 980190962)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mFixture Delete (0.3ms)[0m  DELETE FROM "locations"
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO "locations" ("customer", "type", "language", "no_of_locations", "created_at", "updated_at", "id") VALUES ('MyString', 'bank', 'MyString', 1, '2019-05-01 08:41:18', '2019-05-01 08:41:18', 980190962)[0m
+SQLite3::SQLException: table locations has no column named type: INSERT INTO "locations" ("customer", "type", "language", "no_of_locations", "created_at", "updated_at", "id") VALUES ('MyString', 'bank', 'MyString', 1, '2019-05-01 08:41:18', '2019-05-01 08:41:18', 980190962)
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mFixture Delete (0.2ms)[0m  DELETE FROM "locations"
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO "locations" ("customer", "type", "language", "no_of_locations", "created_at", "updated_at", "id") VALUES ('MyString', 'bank', 'MyString', 1, '2019-05-01 08:41:18', '2019-05-01 08:41:18', 980190962)[0m
+SQLite3::SQLException: table locations has no column named type: INSERT INTO "locations" ("customer", "type", "language", "no_of_locations", "created_at", "updated_at", "id") VALUES ('MyString', 'bank', 'MyString', 1, '2019-05-01 08:41:18', '2019-05-01 08:41:18', 980190962)
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mFixture Delete (0.2ms)[0m  DELETE FROM "locations"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "locations" ("customer", "type", "language", "no_of_locations", "created_at", "updated_at", "id") VALUES ('MyString', 'bank', 'MyString', 1, '2019-05-01 08:41:18', '2019-05-01 08:41:18', 980190962)[0m
+SQLite3::SQLException: table locations has no column named type: INSERT INTO "locations" ("customer", "type", "language", "no_of_locations", "created_at", "updated_at", "id") VALUES ('MyString', 'bank', 'MyString', 1, '2019-05-01 08:41:18', '2019-05-01 08:41:18', 980190962)
+  [1m[35m (0.2ms)[0m  rollback transaction
+Connecting to database specified by database.yml
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+  [1m[35mFixture Delete (0.2ms)[0m  DELETE FROM "locations"
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO "locations" ("customer", "customer_type", "language", "no_of_locations", "created_at", "updated_at", "id") VALUES ('MyString', 'bank', 'MyString', 1, '2019-05-01 08:42:33', '2019-05-01 08:42:33', 980190962)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "locations" ("customer", "customer_type", "language", "no_of_locations", "created_at", "updated_at", "id") VALUES ('MyString', 'all', 'MyString', 1, '2019-05-01 08:42:33', '2019-05-01 08:42:33', 298486374)
+  [1m[36m (182.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mLocation Load (0.3ms)[0m  [1mSELECT "locations".* FROM "locations" WHERE "locations"."id" = ? LIMIT 1[0m  [["id", 980190962]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "locations" 
+Processing by LocationsController#create as HTML
+  Parameters: {"location"=>{"id"=>"980190962", "customer"=>"MyString", "customer_type"=>"bank", "language"=>"MyString", "no_of_locations"=>"1", "lat"=>nil, "lng"=>nil, "created_at"=>"2019-05-01 08:42:33 UTC", "updated_at"=>"2019-05-01 08:42:33 UTC"}}
+Completed 500 Internal Server Error in 1ms
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mLocation Load (0.1ms)[0m  [1mSELECT "locations".* FROM "locations" WHERE "locations"."id" = ? LIMIT 1[0m  [["id", 980190962]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "locations" 
+Processing by LocationsController#destroy as HTML
+  Parameters: {"id"=>"980190962"}
+  [1m[36mLocation Load (0.1ms)[0m  [1mSELECT "locations".* FROM "locations" WHERE "locations"."id" = ? LIMIT 1[0m  [["id", "980190962"]]
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mDELETE FROM "locations" WHERE "locations"."id" = ?[0m  [["id", 980190962]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://test.host/locations
+Completed 302 Found in 3ms (ActiveRecord: 0.4ms)
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "locations" [0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mLocation Load (0.1ms)[0m  SELECT "locations".* FROM "locations" WHERE "locations"."id" = ? LIMIT 1  [["id", 980190962]]
+Processing by LocationsController#edit as HTML
+  Parameters: {"id"=>"980190962"}
+  [1m[36mLocation Load (0.1ms)[0m  [1mSELECT "locations".* FROM "locations" WHERE "locations"."id" = ? LIMIT 1[0m  [["id", "980190962"]]
+  Rendered locations/_form.html.erb (47.2ms)
+Completed 200 OK in 74ms (Views: 72.7ms | ActiveRecord: 0.1ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mLocation Load (0.1ms)[0m  SELECT "locations".* FROM "locations" WHERE "locations"."id" = ? LIMIT 1  [["id", 980190962]]
+Processing by LocationsController#index as HTML
+  [1m[36mLocation Load (0.2ms)[0m  [1mSELECT "locations".* FROM "locations" [0m
+Completed 200 OK in 6ms (Views: 4.9ms | ActiveRecord: 0.2ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mLocation Load (0.1ms)[0m  SELECT "locations".* FROM "locations" WHERE "locations"."id" = ? LIMIT 1  [["id", 980190962]]
+Processing by LocationsController#new as HTML
+  Rendered locations/_form.html.erb (3.2ms)
+Completed 200 OK in 7ms (Views: 6.0ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mLocation Load (0.1ms)[0m  [1mSELECT "locations".* FROM "locations" WHERE "locations"."id" = ? LIMIT 1[0m  [["id", 980190962]]
+Processing by LocationsController#show as HTML
+  Parameters: {"id"=>"980190962"}
+  [1m[35mLocation Load (0.1ms)[0m  SELECT "locations".* FROM "locations" WHERE "locations"."id" = ? LIMIT 1  [["id", "980190962"]]
+  Rendered locations/_googlemap_show.html.erb (0.6ms)
+Completed 200 OK in 8ms (Views: 5.8ms | ActiveRecord: 0.1ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mLocation Load (0.1ms)[0m  [1mSELECT "locations".* FROM "locations" WHERE "locations"."id" = ? LIMIT 1[0m  [["id", 980190962]]
+Processing by LocationsController#update as HTML
+  Parameters: {"location"=>{"id"=>"980190962", "customer"=>"MyString", "customer_type"=>"bank", "language"=>"MyString", "no_of_locations"=>"1", "lat"=>nil, "lng"=>nil, "created_at"=>"2019-05-01 08:42:33 UTC", "updated_at"=>"2019-05-01 08:42:33 UTC"}, "id"=>"980190962"}
+  [1m[35mLocation Load (0.1ms)[0m  SELECT "locations".* FROM "locations" WHERE "locations"."id" = ? LIMIT 1  [["id", "980190962"]]
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+Completed 500 Internal Server Error in 4ms
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+Connecting to database specified by database.yml
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+  [1m[35mFixture Delete (0.3ms)[0m  DELETE FROM "locations"
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO "locations" ("customer", "customer_type", "language", "no_of_locations", "created_at", "updated_at", "id") VALUES ('MyString', 'bank', 'MyString', 1, '2019-05-01 08:44:02', '2019-05-01 08:44:02', 980190962)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "locations" ("customer", "customer_type", "language", "no_of_locations", "created_at", "updated_at", "id") VALUES ('MyString', 'all', 'MyString', 1, '2019-05-01 08:44:02', '2019-05-01 08:44:02', 298486374)
+  [1m[36m (151.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mLocation Load (0.3ms)[0m  [1mSELECT "locations".* FROM "locations" WHERE "locations"."id" = ? LIMIT 1[0m  [["id", 980190962]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "locations" 
+Processing by LocationsController#create as HTML
+  Parameters: {"location"=>{"id"=>"980190962", "customer"=>"MyString", "customer_type"=>"bank", "language"=>"MyString", "no_of_locations"=>"1", "lat"=>nil, "lng"=>nil, "created_at"=>"2019-05-01 08:44:02 UTC", "updated_at"=>"2019-05-01 08:44:02 UTC"}}
+  [1m[36m (0.3ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "locations" ("created_at", "customer", "customer_type", "language", "lat", "lng", "no_of_locations", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)  [["created_at", Wed, 01 May 2019 08:44:02 UTC +00:00], ["customer", "MyString"], ["customer_type", "bank"], ["language", "MyString"], ["lat", nil], ["lng", nil], ["no_of_locations", 1], ["updated_at", Wed, 01 May 2019 08:44:02 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/locations/980190963
+Completed 302 Found in 8ms (ActiveRecord: 0.8ms)
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "locations" 
+  [1m[36m (0.4ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mLocation Load (0.1ms)[0m  [1mSELECT "locations".* FROM "locations" WHERE "locations"."id" = ? LIMIT 1[0m  [["id", 980190962]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "locations" 
+Processing by LocationsController#destroy as HTML
+  Parameters: {"id"=>"980190962"}
+  [1m[36mLocation Load (0.1ms)[0m  [1mSELECT "locations".* FROM "locations" WHERE "locations"."id" = ? LIMIT 1[0m  [["id", "980190962"]]
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mDELETE FROM "locations" WHERE "locations"."id" = ?[0m  [["id", 980190962]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://test.host/locations
+Completed 302 Found in 3ms (ActiveRecord: 0.4ms)
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "locations" [0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mLocation Load (0.1ms)[0m  SELECT "locations".* FROM "locations" WHERE "locations"."id" = ? LIMIT 1  [["id", 980190962]]
+Processing by LocationsController#edit as HTML
+  Parameters: {"id"=>"980190962"}
+  [1m[36mLocation Load (0.1ms)[0m  [1mSELECT "locations".* FROM "locations" WHERE "locations"."id" = ? LIMIT 1[0m  [["id", "980190962"]]
+  Rendered locations/_form.html.erb (44.7ms)
+Completed 200 OK in 65ms (Views: 63.7ms | ActiveRecord: 0.1ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mLocation Load (0.1ms)[0m  SELECT "locations".* FROM "locations" WHERE "locations"."id" = ? LIMIT 1  [["id", 980190962]]
+Processing by LocationsController#index as HTML
+  [1m[36mLocation Load (0.2ms)[0m  [1mSELECT "locations".* FROM "locations" [0m
+Completed 200 OK in 8ms (Views: 5.2ms | ActiveRecord: 0.2ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mLocation Load (0.1ms)[0m  SELECT "locations".* FROM "locations" WHERE "locations"."id" = ? LIMIT 1  [["id", 980190962]]
+Processing by LocationsController#new as HTML
+  Rendered locations/_form.html.erb (6.8ms)
+Completed 200 OK in 12ms (Views: 11.3ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mLocation Load (0.1ms)[0m  [1mSELECT "locations".* FROM "locations" WHERE "locations"."id" = ? LIMIT 1[0m  [["id", 980190962]]
+Processing by LocationsController#show as HTML
+  Parameters: {"id"=>"980190962"}
+  [1m[35mLocation Load (0.1ms)[0m  SELECT "locations".* FROM "locations" WHERE "locations"."id" = ? LIMIT 1  [["id", "980190962"]]
+  Rendered locations/_googlemap_show.html.erb (0.7ms)
+Completed 200 OK in 8ms (Views: 5.9ms | ActiveRecord: 0.1ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mLocation Load (0.1ms)[0m  [1mSELECT "locations".* FROM "locations" WHERE "locations"."id" = ? LIMIT 1[0m  [["id", 980190962]]
+Processing by LocationsController#update as HTML
+  Parameters: {"location"=>{"id"=>"980190962", "customer"=>"MyString", "customer_type"=>"bank", "language"=>"MyString", "no_of_locations"=>"1", "lat"=>nil, "lng"=>nil, "created_at"=>"2019-05-01 08:44:02 UTC", "updated_at"=>"2019-05-01 08:44:02 UTC"}, "id"=>"980190962"}
+  [1m[35mLocation Load (0.1ms)[0m  SELECT "locations".* FROM "locations" WHERE "locations"."id" = ? LIMIT 1  [["id", "980190962"]]
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://test.host/locations/980190962
+Completed 302 Found in 8ms (ActiveRecord: 0.2ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
