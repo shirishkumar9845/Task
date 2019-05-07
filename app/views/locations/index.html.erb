@@ -1,0 +1,35 @@
+<%= form_tag locations_path, :method => :get do %>
+  <p>
+    <%= text_field_tag :search, params[:search] %>
+    <%= submit_tag "Search Near", :name => nil %>
+  </p>
+<% end %>
+
+<div class="span11">
+  <h3>Listing locations</h3>
+
+  <table class="table table-striped">
+    <tr>
+      <th>Customer</th>
+      <th>Type</th>
+      <th>Language</th>
+      <th>No Of Locations</th>
+      <th>Lat</th>
+      <th>Lng</th>
+    </tr>
+  <% @locations.each do |location| %>
+    <tr>
+      <td><%= link_to location.customer, location %></td>
+      <td><%= location.customer_type %></td>
+      <td><%= location.language %></td>
+      <td><%= location.no_of_locations %></td>
+      <td><%= location.lat %></td>
+      <td><%= location.lng %></td>
+    </tr>
+  <% end %>
+  </table>
+
+  <br />
+  <%= link_to 'New Location', new_location_path %>
+  <br />
+</div>

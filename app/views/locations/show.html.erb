@@ -1,0 +1,40 @@
+<div class="span11">
+  <% if notice %>
+    <p class="notice"><%= notice %></p>
+  <% end %>
+
+  <p>
+    <b>Customer:</b>
+    <%= @location.customer %>
+  </p>
+
+  <p>
+    <b>Type:</b>
+    <%= @location.customer_type %>
+  </p>
+
+  <p>
+    <b>Language:</b>
+    <%= @location.language %>
+  </p>
+
+  <p>
+    <b>No Of Locations:</b>
+    <%= @location.no_of_locations %>
+  </p>
+
+  <p>
+    <b>Lat:</b>
+    <span id="location_lat"><%= @location.lat %></span>
+  </p>
+
+  <p>
+    <b>Lng:</b>
+    <span id="location_lng"><%= @location.lng %></span>
+  </p>
+
+  <%= link_to 'Edit', edit_location_path(@location) %> |
+  <%= link_to 'Back', locations_path %>
+
+  <%= render :partial => "googlemap_show" %>
+</div>
