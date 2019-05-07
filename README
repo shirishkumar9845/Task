@@ -1,0 +1,14 @@
+Rails app with the google places api for address autocomplete. 
+
+To run project please run below steps:
+
+1. Create config/database.yml
+2. bundler install
+3. rake db:migrate
+4. rails server
+
+To run test file
+1)RAILS_ENV=test rake db:migrate
+2)rake db:test:prepare
+3)ruby -I test test/functional/locations_controller_test.rb
+
