@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  customer: MyString
+  customer_type: bank
+  language: MyString
+  no_of_locations: 1
+
+two:
+  customer: MyString
+  customer_type: all
+  language: MyString
+  no_of_locations: 1
